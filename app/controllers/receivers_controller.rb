@@ -26,4 +26,11 @@ class ReceiversController < ApplicationController
 
   end
 
+  def destroy
+    receiver = Receiver.find_by(id: params[:id])
+    receiver.destroy
+    render json: {message: "Destroyed"}
+
+  end
+
 end

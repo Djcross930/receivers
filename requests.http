@@ -1,4 +1,4 @@
-GET http://localhost:3000/receivers/1
+GET http://localhost:3000/receivers
 
 ###
 
@@ -18,3 +18,7 @@ Content-Type: application/json
 {
   "wins": 1
 }
+
+###
+
+DELETE http://localhost:3000/receivers/3
