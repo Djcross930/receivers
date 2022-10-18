@@ -5,4 +5,5 @@ Rails.application.routes.draw do
   # root "articles#index"
   get "/receivers" => "receivers#index"
   get "/receivers/:id" => "receivers#show"
+  post "/receivers" => "receivers#create"
 end
