@@ -6,4 +6,5 @@ Rails.application.routes.draw do
   get "/receivers" => "receivers#index"
   get "/receivers/:id" => "receivers#show"
   post "/receivers" => "receivers#create"
+  patch "/receivers/:id" => "receivers#update"
 end

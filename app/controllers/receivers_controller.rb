@@ -17,4 +17,13 @@ class ReceiversController < ApplicationController
     render json: receiver
   end
 
+  def update
+    receiver = Receiver.find_by(id: params[:id])
+    receiver.name = params[:name] || receiver.name
+    receiver.wins = params[:wins] || receiver.wins
+    receiver.save
+    render json: receiver
+
+  end
+
 end

@@ -9,3 +9,12 @@ Content-Type: application/json
   "name": "Brandon Cooks",
   "wins": 2
 }
+
+###
+
+PATCH http://localhost:3000/receivers/1
+Content-Type: application/json
+
+{
+  "wins": 1
+}
